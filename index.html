@@ -3,9 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Formulário</title>
 </head>
 <body>
   
+  <form action="" class="formulario">
+    <h1>Formulário de Pesquisa</h1>
+    <h2>Obrigado por tirar algum tempo para nos ajudar a melhorar a plataforma</h2>    
+    <div class="container">
+      <div class="items">
+        <label>Nome</label>
+        <input type="text" name="nome" id="" class="inputPadrao" placeholder="Digite seu nome" required>
+        <label>Email</label>
+        <input type="text" name="email" id="" class="inputPadrao" placeholder="Digite seu email" required>
+        <label>Idade</label>
+        <input type="number" name="idade" id="" class="inputPadrao">
+        <label>Qual opção descreve melhor sua ocupação atual?</label>
+        <select name="cargoAtual" id="">
+          <option value="">Escolha uma opção</option>
+          <option value="estudante">Estudante</option>
+          <option value="tempoIntegral">Trabalho em tempo integral</option>
+          <option value="tempoIntegralAprendiz">Trabalho em tempo integral como Aprendiz</option>
+          <option value="naoInformar">Prefiro não informar</option>
+          <option value="outro">Outro</option>
+        </select>
+        <label>Você recomendaria a Plataforma para um amigo?</label>
+        <label><input type="radio" name="recomendar" value="sim">Sim</label>
+        <label><input type="radio" name="recomendar" value="talvez">Talvez</label>
+        <label><input type="radio" name="recomendar" value="naoSei">Não tenho certeza</label>
+        <label>Qual é o seu recurso favorito da plataforma?</label>
+        <select name="recursoFavorito" id="">
+          <option value="">Selecione uma opção</option>
+          <option value="desafios">Desafios</option>
+          <option value="projetos">Projetos</option>
+          <option value="comunidade">Comunidade</option>
+          <option value="openSource">Open source</option>
+        </select>
+        <label>O que você gostaria que fosse melhorado?</label>
+        <label><input type="checkbox" name="opcao1" id="" value="frontEnd">Projetos Front End</label>
+        <label><input type="checkbox" name="opcao2" id="" value="backEnd">Projetos Back end</label>
+        <label><input type="checkbox" name="opcao3" id="" value="visualizarDados">Visualizardados</label>
+        <label><input type="checkbox" name="opcao4" id="" value="desafios">Desafios</label>
+        <label><input type="checkbox" name="opcao5" id="" value="comunidade">Comunidade</label>
+        <label><input type="checkbox" name="opcao6" id="" value="videos">Videos</label>
+        <label><input type="checkbox" name="opcao7" id="" value="wiki">Wiki</label>
+        <label><input type="checkbox" name="opcao8" id="" value="forum">Forum</label>
+        <label><input type="checkbox" name="opcao5" id="" value="cursosAdicionais">Cursos Adicionais</label>
+        <label>Alguma dica ou sugestao?</label>
+        <textarea name="sugestao" id="" cols="30" rows="10" placeholder="Deixe seu comentário aqui"></textarea>
+        <button>Enviar</button>                        
+      </div>      
+    </div>
+  </form>  
+
 </body>
 </html>
